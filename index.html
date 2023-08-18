@@ -26,6 +26,18 @@
     <rect x="10" y="10" width="180" height="180" rx="20" ry="20" fill="url(#color-gradient)" />
   </svg>
 
+  <section id="animation1">
+    <h2>Animation 1: Motion along a path</h2>
+    <svg width="300" height="300">
+      <path id="motionPath" d="M10 100 Q 80 10, 150 100 T 300 100" fill="none" stroke="gray" />
+      <circle id="animatedCircle" cx="10" cy="100" r="10" fill="blue">
+        <animateMotion dur="6s" repeatCount="indefinite">
+          <mpath href="#motionPath" />
+        </animateMotion>
+      </circle>
+    </svg>
+  </section>
+
 
 
 
