@@ -38,6 +38,19 @@
     </svg>
   </section>
 
+  <section id="animation2">
+    <h2>Animation 2: Morphing</h2>
+    <svg width="200" height="200">
+      <polygon id="morphingPolygon" points="50,10 120,10 170,170 90,150 20,170" fill="yellow">
+        <animate attributeName="points" dur="4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="50,10 120,10 170,170 90,150 20,170;
+                  50,10 120,70 170,130 90,150 20,170;
+                  50,10 120,10 170,170 90,150 20,170" />
+        <animate attributeName="fill" dur="4s" repeatCount="indefinite" keyTimes="0;0.5;1"
+          values="yellow;blue;yellow" />
+      </polygon>
+    </svg>
+  </section>
+
 
 
 
