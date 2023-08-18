@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>Анимация изменения цветового градиента с поворотом (gradientTransform)</h2>
+  <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="color-gradient">
+        <stop offset="0%" stop-color="purple">
+          <animate attributeName="stop-color" values="purple;orange;blue;green" dur="4s"
+            repeatCount="indefinite" />
+        </stop>
+        <stop offset="100%" stop-color="pink">
+          <animate attributeName="stop-color" values="pink;yellow;cyan;magenta" dur="4s"
+            repeatCount="indefinite" />
+        </stop>
+      </linearGradient>
+    </defs>
+    <rect x="10" y="10" width="180" height="180" rx="20" ry="20" fill="url(#color-gradient)" />
+  </svg>
+
+
+
+
+
+
+
+  <script src="script/script.js"></script>
+</body>
+
+</html>
